@@ -15,6 +15,7 @@
     --main-color: #f57023;
     --big-font: 5rem;
     --h2-font:3rem;
+    --neon-box-shadow: 0 0 .5rem #f57023;
 }
 body{
     background-color: var(--bg-color);
@@ -194,4 +195,161 @@ header.sticky{
     color: var(--second-color);
     line-height: 28px;
     margin-bottom: 45px;
+}
+
+/* --------------------------Skills -----------------------------------*/
+.skills{
+    background: var(--bg-color);
+    padding: 80px 20%;
+    
+}
+.skill-main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 50px;
+}
+.skill-bar{
+    margin-bottom: 2.3rem;
+}
+.skill-main h3{
+    margin-bottom: 2rem;
+    font-size: var(--p-font);
+    text-align: center;
+    letter-spacing: 1px;
+}
+.skill-left .skill-bar .skill-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+.skill-left .skill-bar .bar{
+    width: 100%;
+    height: 10px;
+    background-color: rgb(201, 190, 190);
+    border-radius: 25px;
+    margin-top: 10px;
+    position: relative;
+}
+.skill-left .skill-bar .bar span{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background: var(--main-color);
+    border-radius: 25px;
+    box-shadow: var(--neon-box-shadow);
+}
+.skill-left .skill-bar .bar .html{
+    width: 90%;
+    animation: html 4s;
+}
+.skill-left .skill-bar .bar .css{
+    width: 70%;
+    animation: css 5s;
+}
+.skill-left .skill-bar .bar .js{
+    width: 55%;
+    animation: js 6s;
+}
+.skill-left .skill-bar .bar .figma{
+    width: 80%;
+    animation: figma 7s;
+}
+
+.skill-left .skill-bar .bar .teamwork{
+    width: 70%;
+    animation: teamwork 5s;
+}
+.skill-left .skill-bar .bar .cm{
+    width: 85%;
+    animation: cm 6s;
+}
+.skill-left .skill-bar .bar .pub{
+    width: 70%;
+    animation: pub 7s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* keyframes */
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+@keyframes js{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 55%;
+    }
+}
+@keyframes figma{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+@keyframes teamwork{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+@keyframes cm{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 85%;
+    }
+}
+@keyframes pub{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
 }
