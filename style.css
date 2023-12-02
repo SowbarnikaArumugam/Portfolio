@@ -41,7 +41,7 @@ header{
     position: relative;
 }
 .navlist a{
-    font-size:  var(--p-font);
+    font-size:  rgb(225, 208, 208);
     color: var(--text-color);
     font-weight: 500;
     padding: 10px 27px;
@@ -66,6 +66,7 @@ header{
     cursor: pointer;
     display: none;
 }
+
 .top-btn{
     display: inline-block;
     padding: 9px 30px;
@@ -149,7 +150,7 @@ span{
     line-height: 24px;
     border-radius: 30px;
     transition: ease .40s;
-    margin-bottom: 50px;
+    
 }
 .btn:hover{
     transform: scale(1.1);
@@ -158,6 +159,11 @@ span{
     max-width: 100%;
     width: 200px;
     height: auto;
+}
+header.sticky{
+    background: var(--bg-color);
+    padding: 13px 18%;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0 /50%);
 }
 .about{
     display: grid;
