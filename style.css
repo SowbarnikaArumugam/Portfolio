@@ -288,8 +288,8 @@ header.sticky{
     align-items: center;
     border: 2px solid var(--main-color);
     box-shadow: var(--neon-box-shadow);
-}
- */
+} */
+
  /* contact */
  .contact form{
     text-align: center;
@@ -308,7 +308,29 @@ header.sticky{
     border-radius: 5px;
     padding: .7rem;
 }
-
+.btn{
+    cursor: pointer;
+    border: none;
+}
+footer{
+    padding: 1.5rem 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer p{
+    font-size: var(--p-font);
+    margin-left: 430px;
+    
+}
+footer a{
+    display: inline-flex;
+    justify-content: center;
+    color: var(--text-color);
+    background: var(--main-color);
+    padding: .6rem;
+    border-radius: 5px;
+}
 
 
 
