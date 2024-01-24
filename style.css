@@ -330,9 +330,10 @@ header.sticky{
 
 
 .project-content{
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
     margin-bottom: 50px;
+    margin-top: 17px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, auto));
     align-items: center;
@@ -351,7 +352,7 @@ header.sticky{
     border-radius: 28px;
     border: 1px solid transparent;
     box-shadow: 0 0 5px var(--main-color);
-    padding: 20px;
+    padding: 15px;
     transition: all .50s ease;
 }
 .main-row{
@@ -376,6 +377,11 @@ header.sticky{
     color: var(--text-color);
     background-color: var(--bg-color);
 }
+.row:hover{
+    border-radius: 1px solid var(--main-color);
+    transform: translateY(-5px)scale(1.03);
+    cursor: pointer;
+}
  /* contact */
  .contact form{
     text-align: center;
@@ -399,8 +405,9 @@ header.sticky{
     border: none;
 }
 footer{
-    padding: 1.5rem 10%;
+    padding: .8rem 10%;
     display: flex;
+    background-color: #847c78;
     align-items: center;
     justify-content: space-between;
 }
@@ -426,7 +433,21 @@ footer a{
 
 
 
-
+/* @media (max-width: 1700px){
+    header{
+        padding: 20px 8%;
+    }
+    header.sticky{
+        padding: 14px 8%;
+    }
+    section{
+        padding: 90px 8% 80px
+    }
+    .footer{
+        padding: 18px 5%;
+    }
+    
+} */
 
 
 
