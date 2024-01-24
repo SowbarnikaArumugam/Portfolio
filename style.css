@@ -273,7 +273,7 @@ header.sticky{
     animation: pub 7s;
 }
 /* projects **************************************/
-.heading{
+/* .heading{
     text-align: center;
 }
 .heading h2{
@@ -323,6 +323,58 @@ header.sticky{
     left: 0;
     border-radius: 12px;
     transition: all .40s;
+} */
+
+
+
+
+
+.project-content{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    align-items: center;
+    gap: 2.3rem;
+    margin-top: 4.2 rem;
+    
+}
+.row img{
+   height: min-content;
+    width: 90%;
+    border-radius: 28px;
+    margin-bottom: 1.4rem;
+}
+.row{
+    background-color: rgb(225, 221, 216);
+    border-radius: 28px;
+    border: 1px solid transparent;
+    box-shadow: 0 0 5px var(--main-color);
+    padding: 20px;
+    transition: all .50s ease;
+}
+.main-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+.row h5{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--main-color);
+}
+.row i{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    border-radius: 50%;
+    color: var(--text-color);
+    background-color: var(--bg-color);
 }
  /* contact */
  .contact form{
