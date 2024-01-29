@@ -16,5 +16,5 @@
 
     echo "<p>Messsage is sent successfully!!</p>";
  }
-
- ?>
+?>
+action="process_form.php"

@@ -216,23 +216,39 @@
             <center> <span>Ask me question</span>
             <h2>Contact Me!</h2> </center>
         </div>
-        <form action="process_form.php" method="post">
-            <input type="text" name="name" placeholder="Your name">
-            <input type="text" name="email" placeholder="Your Email">
-            <input type="number" name="number" placeholder="Phone number">
-            <textarea name="msg" id="" cols="30" rows="10" placeholder="Enter your message"></textarea>
+        <form name="submit-to-google-sheet">
+            <input type="text" placeholder="Your name" name="name" required >
+            <input type="text" placeholder="Your Email" name="email" required >
+            <input type="number"  placeholder="Phone number" name="number" required >
+            <textarea id="" cols="30" rows="10" placeholder="Enter your message" name="msg" required></textarea>
+            <span class="success"></span>
             <div class="btn-box formbtn">
                 <button type="submit" class="btn">Send Message</button>
             </div>
-
+            <span id="success"></span>
         </form>
     </section>
     <!-- footer --------------------------->
     <footer>
-        <p>Copyright &copy; 2023 by Sowbarnika || All Right Reserved</p>
+        <!-- <p>Copyright &copy; 2023 by Sowbarnika || All Right Reserved</p> -->
+        <p>Designed and Developed by Sowbarnika | Last Updated on 29 Jan</p>
         <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
     </footer>
-    
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxDZLbfX-tC7mScqYfj7bNdvZlN7fA8FlNChneLdBIunwUPYJ6mUG0NEbDrXjtxmUHPyg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const success = document.getElementById('success');
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                 <!-- success.innerHTML = "successfull "; -->
+                 alert("Data Successfully Submited");
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
     
 </body>
 </html>
