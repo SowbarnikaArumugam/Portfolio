@@ -223,7 +223,7 @@
             <textarea id="" cols="30" rows="10" placeholder="Enter your message" name="msg" required></textarea>
             <span class="success"></span>
             <div class="btn-box formbtn">
-                <button type="submit" class="btn">Send Message</button>
+                <button type="submit" class="btn" onclick="sub()">Send Message</button>
             </div>
             <span id="success"></span>
         </form>
@@ -248,6 +248,9 @@
             })
             .catch(error => console.error('Error!', error.message))
         })
+        function sub(){
+            form.value= "";
+        }
       </script>
     
 </body>
