@@ -330,8 +330,8 @@ header.sticky{
 
 
 .project-content{
-    /* margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 20px;
+    /* margin-right: 100px;
     margin-bottom: 50px;
     margin-top: 17px; */
     display: grid;
@@ -383,6 +383,9 @@ header.sticky{
     cursor: pointer;
 }
  /* contact */
+ .contact{
+    margin-left: 30px;
+ }
  .contact form{
     text-align: center;
     max-width: 50rem;
