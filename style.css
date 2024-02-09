@@ -177,7 +177,7 @@ header.sticky{
     max-width: 100%;
     width: 200px;
     height: auto;
-    margin-left: 300px;
+    /* margin-left: 300px; */
 }
 .about-text h2{
     font-size: var(--h2-font);
@@ -411,9 +411,12 @@ footer{
     align-items: center;
     justify-content: space-between;
 }
+
 footer p{
+    align-items: center;
     font-size: var(--p-font);
-    margin-left: 430px;
+    /* margin-left: 430px; */
+
     
 }
 footer a{
@@ -433,7 +436,7 @@ footer a{
 
 
 
-/* @media (max-width: 1700px){
+@media (max-width: 1700px){
     header{
         padding: 20px 8%;
     }
@@ -441,14 +444,66 @@ footer a{
         padding: 14px 8%;
     }
     section{
-        padding: 90px 8% 80px
+        padding: 90px 8% 80px;
     }
     .footer{
         padding: 18px 5%;
     }
     
-} */
-
+}
+@media (max-width: 1425px){
+    header{
+        padding: 16px 3%;
+        transition: .3s;
+    }
+    header.sticky{
+        padding: 10px 3%;
+        transition: .3s;
+    }
+    section{
+        padding: 70px 3%;
+        transition: .3s;
+    }
+    .contact{
+        width: 95%;
+        transition: .3s;
+    }
+}
+@media (max-width: 970px){
+    #menu-icon{
+        display: block;
+    }
+    .home{
+        min-height: 80vh;
+    }
+    .navlist{
+        position: absolute;
+        top: -600px;
+        left: 0%;
+        right: 0%;
+        flex-direction: column;
+        background-color: var(--main-color);
+        text-align: right;
+        transition: all .40s;
+    }
+    .navlist a{
+        display: block;
+        padding: 1.2rem;
+        margin: 1.5rem;
+        border-right: 2px solid var(--bg-color);
+        color: var(--bg-color);
+    }
+    .navlist a:hover{
+        background: var(--bg-color);
+        color: var(--main-color);
+    }
+    .navlist a::after{
+        display: none;
+    }
+    .navlist.active{
+        top: 100%
+    }
+}
 
 
 
