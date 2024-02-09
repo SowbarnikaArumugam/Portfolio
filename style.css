@@ -330,10 +330,10 @@ header.sticky{
 
 
 .project-content{
-    margin-left: 100px;
+    /* margin-left: 100px;
     margin-right: 100px;
     margin-bottom: 50px;
-    margin-top: 17px;
+    margin-top: 17px; */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, auto));
     align-items: center;
