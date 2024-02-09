@@ -469,7 +469,7 @@ footer a{
         transition: .3s;
     }
 }
-@media (max-width: 970px){
+/* @media (max-width: 970px){
     #menu-icon{
         display: block;
     }
@@ -503,7 +503,42 @@ footer a{
     .navlist.active{
         top: 100%
     }
+} */
+
+@media (max-width: 800px){
+    /* .home{
+        grid-template-columns: 1fr;
+        min-height: 130vh;
+        grid-gap: 1rem;
+    }
+    .home-text{
+        padding-top: 55px;
+    } */
+    /* .home-img{
+        text-align: center;
+    }
+    .home-img img{
+        width: 300px;
+        height: 500px;
+    } */
+    .about{
+        grid-template-columns: 1fr;
+    }
+    .about-img{
+        text-align: center;
+        margin-bottom: 30px;
+    }
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
